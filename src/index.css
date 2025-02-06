@@ -1,21 +1,38 @@
 @import "tailwindcss";
 @theme {
+  /* breakpoint */
   --breakpoint-*: initial;
   --breakpoint-mobile: 500px;
   --breakpoint-tablet: 850px;
   --breakpoint-desktop: 1200px;
 
+  /* font */
+  --font-montserrat: "Montserrat", serif;
+  --font-inter: "Inter", serif;
+
+  /* color */
   --color-navbar: #1e2125;
-  --color-whatsapps: #29A71A;
+  --color-whatsapps: #29a71a;
+  --color-core: #BA0707;
 }
 
 @layer components {
   .wrap {
     @apply w-full mx-auto tablet:w-[90%] desktop:w-[80%] px-7;
   }
+  .spacing-top {
+    @apply pt-30 mobile:pt-32 tablet:pt-36 desktop:pt-40;
+  }
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-inter;
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
