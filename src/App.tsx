@@ -1,8 +1,8 @@
 import { Button } from "./components/ui/button";
 import LinkWa from "./components/ui/LinkWa";
-import Hero from "./fragments/Hero";
+import Hero from "./fragments/HeroSection";
 import Navbar from "./fragments/Navbar";
-import Tentang from "./fragments/tentang";
+import Tentang from "./fragments/TentangSection";
 
 const App = () => {
   const pesan = "halo admin, saya ingin bertanya";
