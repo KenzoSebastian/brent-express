@@ -28,7 +28,7 @@ const App = () => {
         <div className="h-[100px] absolute -bottom-[100px] right-0 left-0 bg-gradient-to-b from-transparent to-white" />
       </div>
       <Tentang />
-      <HargaSection/>
+      <HargaSection telp={telp}/>
     </div>
   );
 };
