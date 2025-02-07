@@ -1,5 +1,6 @@
 import { Button } from "./components/ui/button";
 import LinkWa from "./components/ui/LinkWa";
+import HargaSection from "./fragments/HargaSection";
 import Hero from "./fragments/HeroSection";
 import Navbar from "./fragments/Navbar";
 import Tentang from "./fragments/TentangSection";
@@ -23,10 +24,11 @@ const App = () => {
           alt="background"
           className="w-full h-[calc(100%+100px)] absolute -z-50 object-cover"
         />
-        <div className="h-[100px] absolute -bottom-[100px] right-0 left-0 bg-gradient-to-b from-transparent to-white"></div>
         <Hero encode={encode} telp={telp} />
+        <div className="h-[100px] absolute -bottom-[100px] right-0 left-0 bg-gradient-to-b from-transparent to-white" />
       </div>
       <Tentang />
+      <HargaSection/>
     </div>
   );
 };

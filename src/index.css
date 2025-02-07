@@ -13,7 +13,8 @@
   /* color */
   --color-navbar: #1e2125;
   --color-whatsapps: #29a71a;
-  --color-core: #BA0707;
+  --color-core: #ba0707;
+  --color-secondary: #e8e8e8;
 }
 
 @layer components {
@@ -22,6 +23,12 @@
   }
   .spacing-top {
     @apply pt-30 mobile:pt-32 tablet:pt-36 desktop:pt-40;
+  }
+  .spacing-bottom {
+    @apply pb-10 mobile:pb-15 tablet:pb-20 desktop:pb-25;
+  }
+  .heading {
+    @apply text-3xl tablet:text-4xl desktop:text-5xl font-extrabold font-montserrat text-core;
   }
 }
 

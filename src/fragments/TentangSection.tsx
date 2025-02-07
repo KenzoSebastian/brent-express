@@ -1,3 +1,5 @@
+import WrapperSection from "@/components/ui/wrapperSection";
+
 const Tentang = () => {
   const paragraf = [
     {
@@ -22,19 +24,21 @@ const Tentang = () => {
     },
   ];
   return (
-    <div id="tentang" className="spacing-top h-screen wrap text-center">
-      <h1 className="text-3xl tablet:text-4xl desktop:text-5xl font-extrabold font-montserrat text-core">
-        Tentang Kami
-      </h1>
-      {paragraf.map((item) => (
-        <p
-          key={item.id}
-          className="text-sm tablet:text-base desktop:text-lg mt-10 font-medium inline-block w-[95%] tablet:w-[90%] desktop:w-4/5"
-        >
-          {item.content}
-        </p>
-      ))}
-    </div>
+    <WrapperSection id="tentang" divider="divider1">
+      <div className="text-center">
+        <h1 className="heading">
+          Tentang Kami
+        </h1>
+        {paragraf.map((item) => (
+          <p
+            key={item.id}
+            className="text-sm tablet:text-base desktop:text-lg mt-10 font-medium inline-block w-[95%] tablet:w-[90%] desktop:w-4/5"
+          >
+            {item.content}
+          </p>
+        ))}
+      </div>
+    </WrapperSection>
   );
 };
 
