@@ -36,7 +36,7 @@ const Navbar = () => {
           alt="logo"
           className="w-30 mobile:w-35 tablet:w-44 desktop:w-47"
         />
-        <ul className="hidden desktop:flex gap-9 justify-end text-xl text-white flex-1">
+        <ul className="hidden desktop:flex gap-8 justify-end text-[19px] text-white flex-1">
           {menu.map((item) => (
             <li key={item.href}>
               <a href={item.href}>{item.child}</a>
