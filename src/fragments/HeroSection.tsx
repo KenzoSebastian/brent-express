@@ -15,7 +15,7 @@ const Hero = (props: heroProps) => {
         className="object-cover w-3/5 absolute hidden desktop:block"
       />
       <div className="desktop:w-[42%] desktop:absolute right-15 text-center desktop:text-end flex flex-col items-center desktop:items-end">
-        <h2 className="text-2xl tablet:text-3xl desktop:text-4xl font-semibold mt-10">Selamat Datang di</h2>
+        <h2 className="text-2xl tablet:text-3xl desktop:text-4xl font-semibold desktop:mt-10">Selamat Datang di</h2>
         <h1 className="text-4xl tablet:text-5xl desktop:text6xl- font-extrabold font-montserrat text-core mt-7 desktop:mt-3">
           B'rent Express
         </h1>
