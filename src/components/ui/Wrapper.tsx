@@ -1,11 +1,11 @@
-type WrapperSectionProps = {
+type WrapperProps = {
   id: string;
   children: React.ReactNode;
   divider: string;
   bgColor?: string;
 };
 
-const WrapperSection = (props: WrapperSectionProps) => {
+const Wrapper = (props: WrapperProps) => {
   return (
     <div
       id={props.id}
@@ -21,4 +21,4 @@ const WrapperSection = (props: WrapperSectionProps) => {
   );
 };
 
-export default WrapperSection;
+export default Wrapper;

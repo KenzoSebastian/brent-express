@@ -1,4 +1,5 @@
-import WrapperSection from "@/components/ui/wrapperSection";
+import Wrapper from "@/components/ui/Wrapper";
+
 
 const Tentang = () => {
   const paragraf = [
@@ -24,11 +25,9 @@ const Tentang = () => {
     },
   ];
   return (
-    <WrapperSection id="tentang" divider="divider1">
+    <Wrapper id="tentang" divider="divider1">
       <div className="text-center">
-        <h1 className="heading">
-          Tentang Kami
-        </h1>
+        <h1 className="heading">Tentang Kami</h1>
         {paragraf.map((item) => (
           <p
             key={item.id}
@@ -38,7 +37,7 @@ const Tentang = () => {
           </p>
         ))}
       </div>
-    </WrapperSection>
+    </Wrapper>
   );
 };
 
