@@ -31,7 +31,7 @@ const Tentang = () => {
         {paragraf.map((item) => (
           <p
             key={item.id}
-            className="text-sm tablet:text-base desktop:text-lg mt-10 font-medium inline-block w-[95%] tablet:w-[90%] desktop:w-4/5"
+            className="text-sm tablet:text-base desktop:text-lg font-medium inline-block w-[95%] tablet:w-[90%] desktop:w-4/5"
           >
             {item.content}
           </p>

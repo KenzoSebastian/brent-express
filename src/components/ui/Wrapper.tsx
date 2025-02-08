@@ -11,7 +11,7 @@ const Wrapper = (props: WrapperProps) => {
       id={props.id}
       className={`spacing-top spacing-bottom relative ${props.bgColor}`}
     >
-      <div className="wrap">{props.children}</div>
+      <div className="wrap pb-10">{props.children}</div>
       <img
         src={`./icon/${props.divider}.png`}
         alt="divider"
