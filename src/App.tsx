@@ -2,6 +2,7 @@ import { Button } from "./components/ui/button";
 import LinkWa from "./components/ui/LinkWa";
 import HargaSection from "./fragments/HargaSection";
 import Hero from "./fragments/HeroSection";
+import KontakSection from "./fragments/KontakSection";
 import MengapaSection from "./fragments/MengapaSection";
 import Navbar from "./fragments/Navbar";
 import TentangSection from "./fragments/TentangSection";
@@ -31,6 +32,7 @@ const App = () => {
       <TentangSection />
       <HargaSection telp={telp} />
       <MengapaSection />
+      <KontakSection telp={telp} />
     </div>
   );
 };
