@@ -1,7 +1,7 @@
 import Wrapper from "@/components/ui/Wrapper";
 
 
-const Tentang = () => {
+const TentangSection = () => {
   const paragraf = [
     {
       id: 1,
@@ -41,4 +41,4 @@ const Tentang = () => {
   );
 };
 
-export default Tentang;
+export default TentangSection;

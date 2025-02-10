@@ -2,8 +2,9 @@ import { Button } from "./components/ui/button";
 import LinkWa from "./components/ui/LinkWa";
 import HargaSection from "./fragments/HargaSection";
 import Hero from "./fragments/HeroSection";
+import MengapaSection from "./fragments/MengapaSection";
 import Navbar from "./fragments/Navbar";
-import Tentang from "./fragments/TentangSection";
+import TentangSection from "./fragments/TentangSection";
 
 const App = () => {
   const pesan = "halo admin, saya ingin bertanya";
@@ -18,7 +19,7 @@ const App = () => {
         </Button>
       </LinkWa>
       <Navbar />
-      <div className="h-screen relative">
+      <div className="h-screen relative ">
         <img
           src="./img/bg-hero.png"
           alt="background"
@@ -27,8 +28,9 @@ const App = () => {
         <Hero encode={encode} telp={telp} />
         <div className="h-[100px] absolute -bottom-[100px] right-0 left-0 bg-gradient-to-b from-transparent to-white" />
       </div>
-      <Tentang />
-      <HargaSection telp={telp}/>
+      <TentangSection />
+      <HargaSection telp={telp} />
+      <MengapaSection />
     </div>
   );
 };
