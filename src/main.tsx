@@ -6,7 +6,7 @@ import { MotionConfig } from "motion/react";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <MotionConfig transition={{ duration: .7, ease: "easeInOut", bounce: 0.4, type: "spring" }}>
+    <MotionConfig transition={{ duration: .5, ease: "easeInOut", bounce: 0.4, type: "spring" }}>
       <App />
     </MotionConfig>
   </StrictMode>
