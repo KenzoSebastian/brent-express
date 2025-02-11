@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import LinkWa from "@/components/ui/LinkWa";
 import Wrapper from "@/components/ui/Wrapper";
+import { motion } from "motion/react";
 
 type HargaSectionProps = {
   telp: string;
@@ -54,40 +55,52 @@ const HargaSection = (props: HargaSectionProps) => {
   return (
     <Wrapper id="harga" divider="divider2" bgColor="bg-secondary">
       <div className="text-center">
-        <h1 className="heading">Daftar Harga</h1>
+        <motion.h1
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="heading"
+        >
+          Daftar Harga
+        </motion.h1>
         <div className="mt-10 grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10 place-items-center text-start">
           {cars.map((car) => (
-            <LinkWa
+            <motion.div
               key={car.id}
-              telp={props.telp}
-              encode={encodeURIComponent(
-                `Halo Admin, Saya ingin memesan mobil ${car.title}, apa masih ada?`
-              )}
+              initial={{ opacity: 0, scale: 0 }}
+              transition={{ type: "tween" }}
+              whileInView={{ opacity: 1, scale: 1 }}
             >
-              <Card className="bg-white shadow-lg transition-all hover:scale-105 hover:bg-slate-200">
-                <CardHeader>
-                  <img
-                    src={`./cars/${car.img}`}
-                    alt="car"
-                    className="object-cover"
-                  />
-                  <CardTitle className="text-2xl text-start">
-                    {car.title}
-                  </CardTitle>
-                  <hr />
-                </CardHeader>
-                <CardContent className="flex gap-4 items-center">
-                  <p>Harga mulai dari</p>
-                  <span className="bg-whatsapps px-5 py-3 text-white font-semibold rounded-full">
-                    {car.harga}
-                  </span>
-                </CardContent>
-                <CardFooter className="flex gap-2 items-center text-core">
-                  <img src="./icon/warning.png" alt="warning" />
-                  Syarat dan ketentuan berlaku
-                </CardFooter>
-              </Card>
-            </LinkWa>
+              <LinkWa
+                telp={props.telp}
+                encode={encodeURIComponent(
+                  `Halo Admin, Saya ingin memesan mobil ${car.title}, apa masih ada?`
+                )}
+              >
+                <Card className="bg-white shadow-lg transition-all hover:scale-105 hover:bg-slate-200">
+                  <CardHeader>
+                    <img
+                      src={`./cars/${car.img}`}
+                      alt="car"
+                      className="object-cover"
+                    />
+                    <CardTitle className="text-2xl text-start">
+                      {car.title}
+                    </CardTitle>
+                    <hr />
+                  </CardHeader>
+                  <CardContent className="flex gap-4 items-center">
+                    <p>Harga mulai dari</p>
+                    <span className="bg-whatsapps px-5 py-3 text-white font-semibold rounded-full">
+                      {car.harga}
+                    </span>
+                  </CardContent>
+                  <CardFooter className="flex gap-2 items-center text-core">
+                    <img src="./icon/warning.png" alt="warning" />
+                    Syarat dan ketentuan berlaku
+                  </CardFooter>
+                </Card>
+              </LinkWa>
+            </motion.div>
           ))}
         </div>
       </div>

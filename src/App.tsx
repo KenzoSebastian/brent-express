@@ -14,11 +14,12 @@ const App = () => {
   return (
     <div className="h-[5000px] relative">
       <LinkWa encode={encode} telp={telp}>
-        <Button className="fixed bottom-5 left-5 text-white flex items-center gap-2 bg-whatsapps hover:scale-105 transition-all rounded-full z-50">
+        <Button className="fixed bottom-5 left-5 text-white flex items-center gap-2 bg-whatsapps hover:scale-105 transition-all rounded-full z-50 animate-wiggle duration-100">
           <img src="./icon/wa.png" alt="wa" className="w-7" />
           Chat Admin
         </Button>
       </LinkWa>
+
       <Navbar />
       <div className="h-screen relative ">
         <img

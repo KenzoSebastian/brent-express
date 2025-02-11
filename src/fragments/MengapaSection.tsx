@@ -1,4 +1,5 @@
 import Wrapper from "@/components/ui/Wrapper";
+import { motion } from "motion/react";
 
 const MengapaSection = () => {
   const reasons = [
@@ -48,16 +49,28 @@ const MengapaSection = () => {
   return (
     <Wrapper id="mengapa" divider="divider1">
       <div className="text-center">
-        <h1 className="heading">Mengapa Memilih B'rent Express?</h1>
+        <motion.h1
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          className="heading"
+        >
+          Mengapa Memilih B'rent Express?
+        </motion.h1>
         <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10 place-items-center">
           {reasons.map((reason) => (
-            <div key={reason.id} className="flex items-start gap-4 max-w-90">
-              <img src={`./icon/${reason.icon}`}alt={`icon ${reason.id}`} />
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              transition={{ type: "tween" }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              key={reason.id}
+              className="flex items-start gap-4 max-w-90"
+            >
+              <img src={`./icon/${reason.icon}`} alt={`icon ${reason.id}`} />
               <div className="text-start">
                 <h3 className="font-semibold text-xl">{reason.heading}</h3>
                 <p>{reason.paraf}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
