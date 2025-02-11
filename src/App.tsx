@@ -1,5 +1,6 @@
 import { Button } from "./components/ui/button";
 import LinkWa from "./components/ui/LinkWa";
+import Footer from "./fragments/Footer";
 import HargaSection from "./fragments/HargaSection";
 import Hero from "./fragments/HeroSection";
 import KontakSection from "./fragments/KontakSection";
@@ -12,7 +13,7 @@ const App = () => {
   const telp = "6281511755980";
   const encode = encodeURIComponent(pesan);
   return (
-    <div className="h-[5000px] relative">
+    <div className="relative">
       <LinkWa encode={encode} telp={telp}>
         <Button className="fixed bottom-5 left-5 text-white flex items-center gap-2 bg-whatsapps hover:scale-105 transition-all rounded-full z-50 animate-wiggle duration-100">
           <img src="./icon/wa.png" alt="wa" className="w-7" />
@@ -34,6 +35,7 @@ const App = () => {
       <HargaSection telp={telp} />
       <MengapaSection />
       <KontakSection telp={telp} />
+      <Footer />
     </div>
   );
 };
