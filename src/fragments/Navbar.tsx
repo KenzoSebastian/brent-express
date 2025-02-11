@@ -48,13 +48,18 @@ const Navbar = () => {
             <img
               src="./icon/hamburger.png"
               alt="logo"
-              className="w-10 mobile:w-12 tablet:w-13 desktop:hidden cursor-pointer hover:scale-105 transition-all"
+              className="w-7 mobile:w-9 tablet:w-11 desktop:hidden cursor-pointer hover:scale-105 transition-all"
             />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="bg-white">
+          <DropdownMenuContent className="bg-white p-0 desktop:hidden">
             {menu.map((item) => (
-              <DropdownMenuItem key={item.href}>
-                <a href={item.href}>{item.child}</a>
+              <DropdownMenuItem
+                key={item.href}
+                className="w-45 tablet:w-50 p-2 tablet:p-3 transition-all hover:bg-secondary"
+              >
+                <a className="text-base tablet:text-lg" href={item.href}>
+                  {item.child}
+                </a>
               </DropdownMenuItem>
             ))}
           </DropdownMenuContent>
