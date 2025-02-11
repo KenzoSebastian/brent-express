@@ -15,8 +15,10 @@ const Hero = (props: heroProps) => {
         className="object-cover w-3/5 absolute hidden desktop:block"
       />
       <div className="desktop:w-[42%] desktop:absolute right-15 text-center desktop:text-end flex flex-col items-center desktop:items-end">
-        <h2 className="text-2xl tablet:text-3xl desktop:text-4xl font-semibold desktop:mt-10">Selamat Datang di</h2>
-        <h1 className="text-4xl tablet:text-5xl desktop:text6xl- font-extrabold font-montserrat text-core mt-7 desktop:mt-3">
+        <h2 className="text-2xl tablet:text-3xl desktop:text-4xl font-semibold desktop:mt-10">
+          Selamat Datang di
+        </h2>
+        <h1 className="text-4xl tablet:text-5xl desktop:text6xl- font-extrabold font-montserrat text-core mt-3">
           B'rent Express
         </h1>
         <img
@@ -30,7 +32,11 @@ const Hero = (props: heroProps) => {
         </p>
         <LinkWa encode={props.encode} telp={props.telp}>
           <Button className="mt-10 px-7 bg-core h-fit w-fit text-white text-xl tablet:text-2xl desktop:text-3xl gap-7 rounded-2xl flex items-center shrink-1 hover:scale-105 transition-all">
-            <img src="./icon/wa.png" alt="wa" className="w-12 tablet:w-14 desktop:w-17" />
+            <img
+              src="./icon/wa.png"
+              alt="wa"
+              className="w-12 tablet:w-14 desktop:w-17"
+            />
             <div className="flex flex-col">
               <span>Pesan</span>
               <span>Sekarang</span>
