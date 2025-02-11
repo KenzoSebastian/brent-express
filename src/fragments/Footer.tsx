@@ -103,7 +103,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <p className="absolute bottom-0 right-1/2 translate-x-1/2 tablet:translate-x-0 tablet:right-5 desktop:right-10 text-secondary text-sm tablet:text-base mt-3">
+        <p className="absolute bottom-0 right-1/2 translate-x-1/2 tablet:translate-x-0 tablet:right-5 desktop:right-10 text-secondary text-sm tablet:text-base mt-3 text-center">
           Copyright © 2025 B'rent Express
         </p>
       </div>
