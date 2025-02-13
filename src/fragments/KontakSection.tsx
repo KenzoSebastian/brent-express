@@ -81,7 +81,7 @@ const KontakSection = (props: kontakSectionProps) => {
                   <div className="flex justify-end mt-3">
                     {data.withButton && (
                       <motion.a
-                        initial={{ opacity: 0, scale: 0 }}
+                        initial={{ opacity: 0, scale: .75 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         href={
                           data.title === "Email"

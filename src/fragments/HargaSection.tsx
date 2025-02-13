@@ -66,7 +66,7 @@ const HargaSection = (props: HargaSectionProps) => {
           {cars.map((car) => (
             <motion.div
               key={car.id}
-              initial={{ opacity: 0, scale: 0 }}
+              initial={{ opacity: 0, scale: .75 }}
               transition={{ type: "tween" }}
               whileInView={{ opacity: 1, scale: 1 }}
             >

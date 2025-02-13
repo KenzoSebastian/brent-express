@@ -59,7 +59,7 @@ const MengapaSection = () => {
         <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-10 place-items-center">
           {reasons.map((reason) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0 }}
+              initial={{ opacity: 0, scale: .75 }}
               transition={{ type: "tween" }}
               whileInView={{ opacity: 1, scale: 1 }}
               key={reason.id}
